@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Holidays at affordable housing</title>
+   
+   
+</head>
+<style> 
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+}
+
+/* header  */
+img{
+    width: 1345px;
+    height: 655px;
+    overflow: hidden;
+}
+.trans{
+    width: 1345px;
+    height: 655px;
+    background-image:linear-gradient(to top, rgba(243, 7, 117, 0.596) 40%,rgba(255, 166, 0, 0.671));
+    position: relative;
+    bottom: 659px;
+    z-index: 1;
+    overflow: hidden;
+}
+.nvbar{
+    width: 1349px;
+    height: 70px;
+    background-color:white;
+    position: fixed;
+    z-index: 2;
+    bottom: 588px;
+    box-shadow: -13px 13px 13px  rgba(0, 0, 0, 0.1);
+}
+.navitem{
+    display: flex;
+    position:fixed;
+    bottom: 600px;
+    z-index: 3;
+    gap: 700px;
+}
+.nvlist{
+    display: flex;
+    gap: 50px;
+}
+.nvlist li{
+    margin-top: 5px;
+    list-style: none;
+}
+.nvlist a:hover{
+    color: red;
+}
+.nvlist a{
+    all: initial;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+.navitem-1{
+    margin-left: 100px;
+    color: black;
+    all: initial;
+    margin-left: 100px;
+    border-top: 1px solid #c0c0c0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-bottom:1px solid #c0c0c0;
+    padding: 1px;
+    cursor: pointer;
+}
+.heading h1{
+    position: relative;
+    z-index: 2;
+    bottom: 1060px;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    text-indent: 20px;
+}
+.first-btns button{
+    position: relative;
+    bottom: 1730px;
+    z-index: 1;
+    margin-left: 600px;
+    margin-top: 50%;
+    border-radius:50px;
+    border-color: violet;
+    cursor: pointer;
+    padding: 10px 25px;
+}
+.first-btns button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* section  */
+.sec-head h1{
+    text-align: center;
+    position: relative;
+    bottom:1500px;
+    font-size: 35px;
+}
+.sec-pera{
+    text-align: center;
+    position: relative;
+    bottom:1480px;
+}
+.sec-list{
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
+    list-style: none;
+}
+.sec-list li img{
+    width:400px;
+    height: 460px;
+    overflow:hidden;
+    position: relative;
+    bottom: 1370px;
+    cursor: pointer;
+}
+.sec-two-part{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    gap: 0;
+    position: relative;
+    bottom:1250px ;
+}
+.sec-two-part .sec-imj img{
+    width: 100%;
+    height: 525px;
+    overflow: hidden;
+}
+.sec-dv{
+    width: 50%;
+    height: 525px;
+    background-color: black;
+}
+.sec-dv h1{
+    color: coral;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 35px;
+}
+.brf{
+    color:#ff7f75;
+}
+.brs{
+    color: #c71550;
+}
+.sec-dv p{
+    color:#7f7f7f;
+    font-size: 15px;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+.sec-dv button{
+    background-color: black;
+    color: white;
+    border-width:0.5px;
+    border-color:white;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+.sec-dv button:hover{
+    color: black;
+    background-color: white;
+}
+.sec-head-pera{
+    text-align: center;
+    position: relative;
+    bottom: 1150px;
+}
+.sec-head-pera h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.sec-list-six{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 1050px;
+    margin-left: 110px;
+}
+.sec-list-six li{
+    list-style: none;
+    width: 30%;
+}
+.sec-list-six li i{
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: #c0c0c0;
+}
+.sec-list-six li h3{
+    margin-bottom: 20px;
+}
+.sec-list-six li p{
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+.sec-six-imj{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    bottom: 900px;
+}
+.sec-six-imj li{
+    list-style: none;
+}
+.sec-six-imj img{
+    width: 230px;
+    height: 250px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* footer  */
+footer{
+    width: 98%;
+    position: relative;
+    bottom: 760px;
+}
+.foot-div{
+    background-color:white;
+    width: 1150px;
+    height: 700px;
+    margin-left: 100px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.foot-div h1{
+    padding-top: 100px;
+}
+.foot-div p{
+    padding-top: 20px;
+}
+form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-template-areas:"first-name last-name area area"
+                        "arrival departure area area"
+                        "room how-many-room area area"
+                        "adult how-many-child area area";
+    column-gap: 25px;
+    row-gap: 25px;
+    margin:80px 0 80px 140px ;
+}
+.first-name{
+    grid-area: first-name;
+}
+.arrival{
+    grid-area: arrival;
+}
+.room{
+    grid-area: room;
+}
+.adult{
+    grid-area: adult;
+}
+.last-name{
+    grid-area: last-name;
+}
+.departure{
+    grid-area: departure;
+}
+.how-many-room{
+    grid-area: how-many-room;
+}
+.how-many-child{
+    grid-area: how-many-child;
+}
+.area{
+    grid-area: area;
+}
+form button{
+    grid-area:btn;
+    position: relative;
+    right: 520px;
+    padding: 12px 29px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    background-image: linear-gradient(to top, rgba(243, 7, 117, 0.596) 40%,rgba(255, 166, 0, 0.671));
+}
+.foot-first{
+    width: 100vw;
+    height: 350px;
+    background-color:aliceblue;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    margin-top: 100px;
+}
+ .foot-liist{
+    display: flex;
+}
+.liist-1,.liist-2,.liist-3,.liist-4{
+    width: 25%;
+}
+.liist-1,.liist-2,.liist-3,.liist-4 p{
+    text-align: center;
+}
+.liist-1 h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.liist-2 h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.liist-3 h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.liist-4 h3{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.foot-second{
+    width: 100vw;
+    height: 470px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.foot-liist-second{
+    display: flex;
+    gap: 7px;
+    margin:0 50px 0 50px;
+} 
+ .liist-second-1 h3{
+    color: white;
+    padding-bottom: 35px;
+}
+.liist-second-2 h3{
+    color: white;
+    padding-bottom: 35px;
+}
+.liist-second-4 h3{
+    color: white;
+    padding-bottom: 35px;
+}
+.liist-second-4 i{
+    margin-top: 20px;
+    cursor: pointer;
+    color:#f8f2f2 ;
+}
+.liist-second-4 i:hover{
+    color: red;
+}
+.liist-second-2 form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas:"foot-mail foot-mail mail-btn" ;
+}
+.liist-second-2 input{
+    color:  #f8f2f2;
+    background-color:black;
+    border: none;
+    padding: 6px 23px;
+    margin-top: 15px;
+}
+.liist-second-2 button{
+    padding:6px 10px ;
+    background-image: linear-gradient(to top, rgba(243, 7, 117, 0.596) 40%,rgba(255, 166, 0, 0.671));
+}
+.liist-second-3 h3{
+    color: white;
+    padding-bottom: 35px;
+} 
+.liist-second-1,.liist-second-2,.liist-second-3,.liist-second-4 p{
+    color: #f8f2f2;
+}
+.liist-second-3-liist img{
+    width:60px;
+    height: 60px;
+}
+.liist-second-1,.liist-second-2,.liist-second-3,.liist-second-4{
+    width: 24%;
+}
+.foot-second-out-pera{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.foot-second-out-pera p{
+    color: #f8f2f2 ;
+} 
+.foot-second-out-pera span{
+    color: #c71550;
+}
+
+</style>
+<body>
+
+
+  
+    <header id="home">
+        <nav>
+          <img src="https://altcampus.github.io/platina/img/header-bg.jpg" alt="Hotel">
+          <div class="trans"></div>
+          <div class="nvbar"></div>
+          <div class="navitem"> 
+            <a class="navitem-1" href="#">PLATINA</a>
+            <ul class="nvlist">
+              <li> <a class="nvlist-1" href="#home">HOME</a> </li>
+              <li> <a class="nvlist-2" href="#facilities">FACILITIES</a></li>
+              <li> <a class="nvlist-3" href="#service">SERVICE</a></li>
+              <li> <a class="nvlist-4" href="#book">BOOK</a> </li>
+            </ul>
+          </div>
+
+          <div class="heading">
+            <h1>Enjoy Holidays <br> with affordable Hotels </h1>
+          </div>
+          <div class="first-btns">
+            <button>START SEARCHING</button>
+          </div>
+        </nav>
+    </header>
+
+    <section id="facilities">
+      <main>
+        <div class="sec-head">
+          <h1>Superb Facilities</h1>
+        </div>
+        <div class="sec-pera">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.  </p>
+        </div>
+        <ul class="sec-list">
+          <li> <img src="" alt="Beach"> </li>
+          <li> <img src="https://images.pexels.com/photos/3997993/pexels-photo-3997993.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Body Massage"> </li>
+          <li> <img src="https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Resort"> </li>
+        </ul>
+        <div class="sec-two-part">        
+          <div class="sec-imj">
+            <img src="https://altcampus.github.io/platina/img/about-img.jpg" alt="">
+          </div>
+          <div class="sec-dv">
+            <h1>A very Lovely <br> 
+                <span class="brf"> Welcome </span> <br>
+                <span class="brs"> to our Hotel</span> 
+            </h1>
+            <p>inappropriate behavior is often laughed off as <br> “boys will be boys,” women face higher conduct <br> standards especially in the workplace. That is 
+             <br> why it is crucial that, as women, our behavior on <br> the job is beyond reproach. inappropriate  
+            <br> behavior is often laughed. </p>
+            <button>MAKE PACKAGE OF YOUR OWN</button>
+          </div>
+        </div>
+
+        <div class="sec-head-pera">
+          <h1>Superb Facilities</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.  
+          </p>
+        </div>
+
+        <ul class="sec-list-six">
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <h3>Easy Flight Search</h3>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct. </p>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <h3>Get Hotel Offers</h3>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+          <h3>Holiday Packages</h3>
+          <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct.</p>
+        </li> 
+        <li>
+          <i class="fa-brands fa-github"></i>
+            <h3>Easy Flight Search</h3>
+            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct. </p>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+            <h3>Get Hotel Offers</h3>
+            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct. </p>
+        </li>
+        <li>
+          <i class="fa-brands fa-github"></i>
+            <h3>Holiday Packages</h3>
+            <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct. </p>
+        </li>
+        </ul>
+
+        <ul class="sec-six-imj">
+          <li><img id="i1" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/3601426/pexels-photo-3601426.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Resort"></li>
+          <li><img id="i2" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/1189586/pexels-photo-1189586.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+          <li><img id="i3" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/3885524/pexels-photo-3885524.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+          <li><img id="i4" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+          <li><img id="i5" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/4641236/pexels-photo-4641236.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+          <li><img id="i6" onmouseenter="addBg(this)" onmouseleave="removeBg(this)" src="https://images.pexels.com/photos/14386361/pexels-photo-14386361.jpeg?auto=compress&cs=tinysrgb&w=600" alt=""></li>
+        </ul>
+      </main>
+    </section>
+
+    <footer >
+      <div class="foot-div" id="book" >
+          <h1>Book a Room</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br>labore et dolore magna aliqua. </p>
+
+          <div class="form-list"> 
+            <form action="" method="get">
+              <label for="name"></label>
+              <input title="Please fill out this field" class="first-name" type="text" id="name" name="username" placeholder="First Name"> <br>
+
+              <label for="date" style="none"> </label>
+              <input title="Please fill out this field" class="arrival" type="date" name="userdob" id="dob" placeholder="Arrival" style="none">  <br>
+
+              <select class="room" >
+                <option label="Room Type">  Room Type</option>
+                <option value="Room type 1">Room type 1</option>
+                <option value="Room type 2">Room type 2</option>
+                <option value="Room type 3">Room type 3</option>
+              </select> <br>       
+
+              <select class="adult">
+                <option label="Adults">  Adults </option>
+                <option value=" 1"> 1</option>
+                <option value=" 2">2</option>
+                <option value=" 3"> 3</option>
+              </select> <br> 
+
+              <label for="last name"></label>
+              <input title="Please fill out this field" class="last-name" type="text" id="Last name" name="username" placeholder="Last Name">  <br>
+
+              <label for="date"></label>
+              <input title="Please fill out this field" class="departure" type="date" name="dob" id="dob"> <br>
+
+              <select class="how-many-room">
+                <option label="Number Of Rooms">  Number Of Rooms </option>
+                <option value=" 1"> 1</option>
+                <option value=" 2">2</option>
+                <option value=" 3"> 3</option>
+              </select> <br> 
+
+              <select class="how-many-child">
+                <option label="Childs">  Childs </option>
+                <option value=" 1"> 1</option>
+                <option value=" 2">2</option>
+                <option value=" 3"> 3</option>
+              </select> <br>
+
+              <textarea title="Please fill out this field" class="area" name="Message" placeholder="Message"></textarea>
+
+              <button type="submit">BOOK ROOM <i class="fa-solid fa-arrow-right-long" ></i></button>
+
+
+            </form>
+          </div>
+         
+      </div>
+        
+
+      <div class="foot-first">
+        <div class="foot-liist">
+          <div class="liist-1">
+            <h3> Visit Our Office</h3>
+            <p>56/8, bir uttam qazi nuruzzaman <br> road, west panthapath, kalabagan, <br> Dhanmondi, Dhaka - 1205 </p>
+          </div>
+          <div class="liist-2">
+            <h3>Let us call us</h3>
+            <p>Phone 01: 012-6532-568-9746 <br>
+              Phone 02: 012-6532-568-9748 <br>
+              FAX: 02-6532-568-746 </p>
+          </div>
+          <div class="liist-3">
+            <h3>Let us Email Us</h3>
+            <p>hello@colorlib.com
+              mainhelpinfo@colorlib.com
+              infohelp@colorlib.com </p>
+          </div>
+          <div class="liist-4">
+            <h3>Customer Support</h3>
+            <p>support@colorlib.com
+              emergencysupp@colorlib.com
+              extremesupp@colorlib.com </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="foot-second">
+        <div class="foot-liist-second">  
+            <div class="liist-second-1">
+              <h3>About Us</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore magna aliqua. </p>
+            </div>
+            <div class="liist-second-2">
+              <h3>Newsletter</h3>
+              <p>Stay update with our latest</p>
+              
+                <input  type="email" id="email" name="email" placeholder="Enter Email">
+                <button type="submit"><i class="fa-solid fa-arrow-right-long" style="color: #ffffff;"></i></button>
+              
+            </div>
+            <div class="liist-second-3">
+              <h3>Instragram Feed</h3>
+              <div class="liist-second-3-liist">
+                <img src="https://images.pexels.com/photos/9834801/pexels-photo-9834801.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram">
+                <img src="https://images.pexels.com/photos/957039/hut-alpine-mountains-bavaria-957039.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram">
+                <img src="https://images.pexels.com/photos/207697/pexels-photo-207697.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram">
+                <img src="https://images.pexels.com/photos/7800311/pexels-photo-7800311.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram"> <br>
+                <img src="https://images.pexels.com/photos/11513313/pexels-photo-11513313.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram">
+                <img src="https://images.pexels.com/photos/165505/pexels-photo-165505.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Instragram">
+                <img src="https://altcampus.github.io/platina/img/i7.jpg" alt="Instragram">
+                <img src="https://altcampus.github.io/platina/img/i8.jpg" alt="Instragram">
+
+              </div>
+            </div> 
+            <div class="liist-second-4">
+              <h3>Follow Us</h3>
+              <p>Let us be social</p>
+              <i class="fa-brands fa-facebook-f" 
+               ></i> &nbsp; &nbsp;
+              <i class="fa-brands fa-twitter" ></i> &nbsp; &nbsp;
+              <i class="fa-solid fa-basketball"></i> &nbsp; &nbsp;
+              <i class="fa-brands fa-behance"></i>
+            </div> 
+          </div> 
+          <div class="foot-second-out-pera">
+            <p>Copyright ©2023 All rights reserved | Made with <i class="fa-regular fa-heart" style="color: #ff0080;"></i> by <span>Colorlib</span>  & distributed by <span>ThemeWagon</span> </p>
+          </div>
+        </div>    
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
